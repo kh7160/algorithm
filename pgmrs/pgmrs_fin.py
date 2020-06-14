@@ -1,3 +1,5 @@
+import sys
+sys.setrecursionlimit(10000)
 tmp = [0] * 1000000
 
 def solution(n):
@@ -16,4 +18,4 @@ def Fin(n):
         tmp[n-1] = Fin(n - 2) + Fin(n - 1)
         return tmp[n-1]
 
-print(solution(10000))
+print(solution(100000))
