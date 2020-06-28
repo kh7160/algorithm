@@ -1,2 +1,4 @@
-if (0.1+0.2) == 0.3:
-    print(1)
+sum = 0
+for i in range(100000000):
+    sum += i
+print(sum)
