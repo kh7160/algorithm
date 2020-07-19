@@ -1,4 +1,7 @@
-sum = 0
-for i in range(100000000):
-    sum += i
-print(sum)
+def opponent(self):
+    return ('Fire', 'Water') if self.p_type = 'Grass' else \
+            ('Dark', 'Psychic') if self.p_type = 'Ghost' else \
+            ('Water', 'Grass') if self.p_type = 'Fire' else \
+            ('Electric', 'Fighting')
+
+opponent('Grass')
