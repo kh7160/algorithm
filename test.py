@@ -1,7 +1,2 @@
-def opponent(self):
-    return ('Fire', 'Water') if self.p_type = 'Grass' else \
-            ('Dark', 'Psychic') if self.p_type = 'Ghost' else \
-            ('Water', 'Grass') if self.p_type = 'Fire' else \
-            ('Electric', 'Fighting')
-
-opponent('Grass')
+print(type("1 2 3 4 5 6 7 8 9 10".split(' ')))
+print(type("1 2 3 4 5 6 7 8 9 10".split()))
