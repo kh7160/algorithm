@@ -1,19 +1,18 @@
-import sys
-sys.stdin = open("input.txt", "r")
+# import sys
+# sys.stdin = open("input.txt", "r")
 
-tot = int(input())
-result = 0
-def eureka(cnt):
-    if cnt == 3:
-        if data_sum 
-        global result = 1
-
-    for i in range(1, k + 1):
-        eureka(i, num_len + 1, k)
-
-
-for case in range(tot):
-    k = int(input())
-
-    data_sum = eureka(0,0,k)
-    print(data_sum)
+n = int(input())
+for _ in range(n):
+    num = int(input())
+    clss = False
+    for i in range(1,47):
+        for j in range(1,47):
+            for k in range(1,47):
+                if i * (i + 1) / 2 + j * (j + 1) / 2 + k * (k + 1) / 2 == num:
+                    clss = True
+                    break
+            if clss == True:
+                break
+        if clss == True:
+            break
+    print(1 if clss == True else 0)
