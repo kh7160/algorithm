@@ -1,10 +1,21 @@
-def recur_func(n):
-    if n == 3:
-        return "***\n* *\n***"
-    else:
-        pattern = recur_func(n/3)
-        print(f"{pattern}")
-        return f"{pattern}{pattern}{pattern}\n{pattern} {pattern}\n{pattern}{pattern}{pattern}"
+def recur_func(star):
+    result = []
+    for i in range(3 * len(star)):
+        if i // len(star) == 1:
+            result.append(star[i%len(star)] + ' ' * len(star) + star[i%len(star)])
+        else:
+            result.append(star[i%len(star)] * 3)
+    return result
 
+star = ['***', '* *', '***']
 n = int(input())
-recur_func(n)
+cnt = 0
+while n != 3:
+    n //= 3
+    cnt += 1
+
+for i in range(cnt):
+    star = recur_func(star)
+
+for _ in star:
+    print(_)
