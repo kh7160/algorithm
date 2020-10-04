@@ -1,5 +1,4 @@
-def solution(mylist):
-    answer = [_ ** 2 for _ in mylist if _ % 2 == 0]
-    return answer
+def example(a : str) -> str:
+    return a
 
-print(solution([3,2,6,7]))
+example(4)
